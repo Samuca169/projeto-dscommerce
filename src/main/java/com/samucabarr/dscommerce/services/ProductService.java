@@ -1,6 +1,7 @@
 package com.samucabarr.dscommerce.services;
 
 import com.samucabarr.dscommerce.dto.ProductDTO;
+import com.samucabarr.dscommerce.dto.ProductMinDTO;
 import com.samucabarr.dscommerce.entities.Product;
 import com.samucabarr.dscommerce.repositories.ProductRepository;
 import com.samucabarr.dscommerce.services.exceptions.DatabaseException;
@@ -29,9 +30,9 @@ public class ProductService {
     }
 
     @Transactional(readOnly = true)
-    public Page<ProductDTO> findAll(String name, Pageable pageable) {
+    public Page<ProductMinDTO> findAll(String name, Pageable pageable) {
         Page<Product> result = repository.searchByName(name, pageable);
-        return result.map(x -> new ProductDTO(x));
+        return result.map(x -> new ProductMinDTO(x));
     }
 
     @Transactional
