@@ -8,3 +8,16 @@ O Projeto consiste em site comercial, que mantem cadastro de usuarios, produtos 
 consulta um catalogo de produtos e registra pedidos.
 
 ## Modelo conceitual
+![Captura de tela 2023-11-30 142110](https://github.com/Samuca169/projeto-dscommerce/assets/83040311/d44f9686-7c2d-43cc-b87c-ac9f53f4f464)
+
+# Tecnologias utilizadas
+
+- Java
+- Spring Boot
+- JPA / Hibernate
+- Maven
+
+# Autor
+Samuel Rodrigues de Barros
+
+[Linkedin](https://www.linkedin.com/in/samuelrod169/)
