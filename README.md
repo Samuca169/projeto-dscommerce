@@ -1,4 +1,5 @@
 # DSCommerce
+![NPM](https://img.shields.io/npm/l/react?style=plastic&link=https%3A%2F%2Fgithub.com%2FSamuca169%2Fprojeto-dscommerce%2Fblob%2Fmain%2FLICENSE)
 
 ## Sobre o Projeto
 
