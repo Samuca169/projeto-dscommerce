@@ -2,10 +2,8 @@ package com.samucabarr.dscommerce.dto;
 
 import com.samucabarr.dscommerce.entities.Category;
 import com.samucabarr.dscommerce.entities.Product;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Positive;
-import javax.validation.constraints.Size;
+
+import javax.validation.constraints.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +15,7 @@ public class ProductDTO {
     @Size(min = 10, message = "Descrição precisa ter no mínimo 10 caracteres")
     @NotBlank(message = "Campo requerido")
     private String description;
+    @NotNull(message = "Campo requerido")
     @Positive(message = "O preço deve ser positivo")
     private Double price;
     private String imgUrl;
